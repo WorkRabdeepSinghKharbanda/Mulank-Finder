@@ -1,12 +1,13 @@
 import './App.css';
 // Components
-import { Hero, MulankSummarizer, MulankWidget }  from './Components/index'
+import { Hero, MulankSummarizer, MulankWidget,WaterMark }  from './Components/index'
 function App() {
   return (
    <>
       <Hero />
       <MulankWidget />
       <MulankSummarizer />
+      <WaterMark />
     </>
   )
 }

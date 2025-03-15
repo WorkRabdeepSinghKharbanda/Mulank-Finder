@@ -13,7 +13,7 @@ const MulankSummarizer = () => {
     <>
       {showSummarize && (
         <section>
-          <div className="container text-center">
+          <div className="container text-center pb-5">
             <h4>Mulank Number: {mulank}</h4>
             <p>{MULANK_SHORT_DATA[mulank as keyof typeof MULANK_SHORT_DATA]}</p>
             <button
