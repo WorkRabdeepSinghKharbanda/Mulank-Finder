@@ -30,7 +30,7 @@ const MulankWidget = () => {
   return (
     <>
       <section className="container">
-        <div className="w-50 mx-auto my-5 d-flex flex-column gap-3">
+        <div className="mx-auto my-5 d-flex flex-column gap-3">
           <input
             className="mb-3"
             type="text"
