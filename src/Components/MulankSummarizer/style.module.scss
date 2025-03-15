@@ -1,0 +1,74 @@
+/* Result Box - Mystical Glow */
+.result-box {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 22px;
+    border-radius: 15px;
+    margin-top: 20px;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
+    backdrop-filter: blur(12px);
+    animation: fadeIn 0.7s ease-in-out;
+    border: 2px solid rgba(255, 204, 0, 0.3);
+}
+
+/* Collapse Button */
+.collapse-btn {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.collapse-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* List Styling for Astrology Vibe */
+.result-box ul {
+    text-align: left;
+    padding: 0;
+    margin-top: 15px;
+    list-style: none;
+}
+
+.result-box ul li {
+    font-size: 18px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+}
+
+.result-box ul li:last-child {
+    border-bottom: none;
+}
+
+/* Custom List Icon */
+.result-box ul li::before {
+    content: "🔯";
+    font-size: 22px;
+    margin-right: 10px;
+    color: #ffcc00;
+    text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.8);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 { font-size: 2.2rem; }
+    input, button { width: 100%; }
+}
