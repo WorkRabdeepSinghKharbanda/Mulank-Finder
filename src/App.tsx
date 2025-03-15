@@ -7,7 +7,7 @@ function App() {
       <Hero />
       <MulankWidget />
       <MulankSummarizer />
-      <WaterMark />
+      {/* <WaterMark /> */}
     </>
   )
 }
