@@ -1,4 +1,4 @@
-import './styles/App.module.scss';
+import './App.css';
 // Components
 import { Hero, MulankSummarizer, MulankWidget }  from './Components/index'
 function App() {
