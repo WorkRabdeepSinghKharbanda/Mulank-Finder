@@ -1,54 +1,55 @@
-# React + TypeScript + Vite
+# Mulank Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mulank Finder is a React + TypeScript application built with Vite. It calculates the Mulank (numerology number) of a person based on their name and birth date.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Calculate Mulank based on the sum of the digits in the birth date.
+- Derive numerological values from the name using predefined mappings.
+- User-friendly interface for inputting name and birth date.
+- Real-time calculation and display of results.
 
-## Expanding the ESLint configuration
+## How It Works
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. **Name Calculation**: Each letter in the name is assigned a numeric value based on numerology principles. The sum of these values is reduced to a single digit.
+2. **Birth Date Calculation**: The digits in the birth date are summed and reduced to a single digit.
+3. **Final Mulank**: The results from the name and birth date are combined to determine the Mulank.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Getting Started
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Prerequisites
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Node.js (v16 or higher)
+- npm or yarn
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd Mulank-Finder
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. Open the application in your browser at `http://localhost:3000`.
+
+## Usage
+
+1. Enter your full name in the input field.
+2. Provide your birth date in the specified format (e.g., YYYY-MM-DD).
+3. Click the "Calculate" button to view your Mulank.
+
+The site is deployed at [Mulank Finder](https://mulank-finder.netlify.app/).
